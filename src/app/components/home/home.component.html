@@ -1,0 +1,42 @@
+<!--<angular2-fullcalendar [options]="calendarOptions"></angular2-fullcalendar>-->
+
+<!--<calendar-heatmap
+  [data]="data"
+  [color]="color"
+  [overview]="overview"
+  (handler)="print($event)">
+</calendar-heatmap>-->
+
+
+<!--<daypilot-calendar></daypilot-calendar>-->
+<div class="container">
+    <hr>
+    <button (click)="openModal()" type="button" class="btn btn-default" >Open Modal</button>
+    <hr>
+</div>
+<div class="modal fade" tabindex="-1" [ngClass]="{'in': visibleAnimate}"
+       [ngStyle]="{'display': visible ? 'block' : 'none', 'opacity': visibleAnimate ? 1 : 0}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <div class="col-sm-12 pad0">
+                    <button type="button" (click)="hideModal()" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="">Modal Title</h4>
+                </div>
+            </div>
+            <div class="modal-body clearfix">
+                <div class="app-modal-body">
+                    <div>
+                        <p> 
+                            Modal Content <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click)="hideModal()">Yes</button>
+                <button type="button" class="btn btn-danger" (click)="hideModal()">No</button>
+            </div>
+        </div>
+    </div>
+</div>
