@@ -11,7 +11,9 @@
 <!--<daypilot-calendar></daypilot-calendar>-->
 <div class="container">
     <hr>
-    <button (click)="openModal()" type="button" class="btn btn-default" >Open Modal</button>
+    <button (click)="openModal()" type="button" class="btn btn-primary" >Open Modal</button>
+    <button (click)="goToPage('responsive')" type="button" class="btn btn-success" >Responsive Page</button>
+    <button (click)="goToPage('calendar')" type="button" class="btn btn-success" >Calendar Page</button>
     <hr>
 </div>
 <div class="modal fade" tabindex="-1" [ngClass]="{'in': visibleAnimate}"

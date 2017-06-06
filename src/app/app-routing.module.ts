@@ -18,6 +18,16 @@ import { MetaGuard, MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioni
                 // canActivateChild: [MetaGuard],
                 loadChildren: 'app/components/home/home.module#HomeModule'
             },
+            {
+                path: 'responsive', 
+                // canActivateChild: [MetaGuard],
+                loadChildren: 'app/components/responsive/responsive.module#ResponsiveModule'
+            },
+            {
+                path: 'calendar', 
+                // canActivateChild: [MetaGuard],
+                loadChildren: 'app/components/calendar/calendar.module#CalendarModule'
+            },
             {   path: '**', 
                 redirectTo: '' 
             }
