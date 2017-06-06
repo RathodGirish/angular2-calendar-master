@@ -3,7 +3,6 @@
  */
 import {NgModule}     from '@angular/core';
 import {RouterModule} from '@angular/router';
-import { MetaGuard, MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioning } from '@nglibs/meta';
 
 @NgModule({
     imports: [
@@ -26,7 +25,7 @@ import { MetaGuard, MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioni
             {
                 path: 'calendar', 
                 // canActivateChild: [MetaGuard],
-                loadChildren: 'app/components/calendar/calendar.module#CalendarModule'
+                loadChildren: 'app/components/calendar/calendar.module#CalendarCustomModule'
             },
             {   path: '**', 
                 redirectTo: '' 

@@ -3,15 +3,19 @@
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AgmCoreModule, GoogleMapsAPIWrapper } from 'angular2-google-maps/core'
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { Multiselect, FilterPipe } from '../custom/multiselect/multiselect.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { CalendarComponent } from "angular2-fullcalendar/src/calendar/calendar";
 // import { CalendarModule } from 'angular-calendar';
 // import { CalendarHeatmap } from 'angular2-calendar-heatmap';
 // import {DayPilot} from "daypilot-pro-angular";
 import { CalendarComponent } from './calendar.component';
 import { CalendarRoutingModule } from "./calendar-routing.module";
+// import {ScheduleModule} from 'primeng/primeng';
+import { CalendarModule } from 'angular-calendar';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -20,7 +24,10 @@ import { CalendarRoutingModule } from "./calendar-routing.module";
         CalendarRoutingModule,
         FormsModule, 
         ReactiveFormsModule,
-        // CalendarModule.forRoot()
+        // ScheduleModule
+        NgbModule.forRoot(),
+        CalendarModule.forRoot(),
+        // BrowserAnimationsModule
     ],
     declarations: [
         CalendarComponent,
@@ -29,5 +36,5 @@ import { CalendarRoutingModule } from "./calendar-routing.module";
         // CalendarComponent
     ]
 })
-export class CalendarModule {
+export class CalendarCustomModule {
 }

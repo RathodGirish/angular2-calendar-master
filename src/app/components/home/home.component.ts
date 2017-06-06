@@ -8,15 +8,10 @@ import { Observable } from 'rxjs/Rx';
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { CoolLocalStorage } from 'angular2-cool-storage';
 
 import { CommonAppService } from '../../services/index';
 
 import { AppComponent } from '../../app.component';
-
-export var iconUrl: string = "assets/public/img/pin-purple.png";
-
-import * as $ from 'jquery';
 
 @Component({
   providers: [

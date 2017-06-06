@@ -8,7 +8,6 @@ import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { MetaGuard, MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioning } from '@nglibs/meta';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -18,8 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     imports: [
         BrowserModule,
         HttpModule,
-        AppRoutingModule,
-        MetaModule.forRoot(),
+        AppRoutingModule
     ],
     bootstrap: [AppComponent],
     providers: []

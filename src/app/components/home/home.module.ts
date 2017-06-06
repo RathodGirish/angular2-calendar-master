@@ -3,7 +3,6 @@
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AgmCoreModule, GoogleMapsAPIWrapper } from 'angular2-google-maps/core'
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { Multiselect, FilterPipe } from '../custom/multiselect/multiselect.component';
 // import { CalendarComponent } from "angular2-fullcalendar/src/calendar/calendar";
